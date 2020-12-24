@@ -23,17 +23,17 @@ arch:
   - ppc64le
 
 addons:
-  apt:
-      update: true
-      packages:
-      `       - texlive
-              - texlive-extra-utils
-              - texlive-latex-extra
-              - libxml2-utils
-              - cmake cmake-data
-              - flex
-              - bison
-              - qt5-default
+    apt:
+        update: true
+        packages:
+      `     - texlive
+            - texlive-extra-utils
+            - texlive-latex-extra
+            - libxml2-utils
+            - cmake cmake-data
+            - flex
+            - bison
+            - qt5-default
 
 script:
     - mkdir build
