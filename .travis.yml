@@ -6,7 +6,7 @@ arch:
   - amd64
   - ppc64le
 before_install:
-    - sudo apt-add-repository ppa:smspillaz/cmake-3.16.3 -y
+    - sudo apt-get -y install cmake
     - sudo apt-get update
 
 install:
