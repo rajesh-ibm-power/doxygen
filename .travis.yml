@@ -15,23 +15,29 @@ language: cpp
 compiler:
   - gcc
   - clang
+  
+dist: xenial
 
 arch:
   - amd64
   - ppc64le
+
+before_install:
+    - sudo apt-get -y install cmake
+    - sudo apt-get update
 
 addons:
     apt:
         update: true
         packages:
       `     - texlive
-            - texlive-extra-utils
-            - texlive-latex-extra
-            - libxml2-utils
-            - cmake cmake-data
-            - flex
-            - bison
-            - qt5-default
+              - texlive-extra-utils
+              - texlive-latex-extra
+              - libxml2-utils
+              - cmake cmake-data
+              - flex
+              - bison
+              - qt5-default
 
 script:
     - mkdir build
