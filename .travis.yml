@@ -21,15 +21,18 @@ before_install:
     - sudo apt-get -y install cmake
     - sudo apt-get update
 
-install:
-    - sudo apt-get install texlive
-    - sudo apt-get install texlive-extra-utils
-    - sudo apt-get install -y texlive-latex-extra
-    - sudo apt-get install libxml2-utils
-    - sudo apt-get install cmake cmake-data
-    - sudo apt-get install flex
-    - sudo apt-get install bison
-    - sudo apt-get install qt5-default
+addons:
+  apt:
+    packages:
+    - texlive
+    - texlive-extra-utils
+    - texlive-latex-extra
+    - libxml2-utils
+    - cmake-data
+    - flex
+    - bison
+    - qt5-default
+    
 script:
     - mkdir build
     - cd build
