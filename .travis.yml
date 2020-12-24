@@ -1,10 +1,10 @@
 # ----------------------------------------------------------------------------
 #
-# Package             : <package name>
-# Source Repo         : <orginal repo link>
-# Travis Job Link     : <travis job link>
-# Created travis.yml  : <Yes, if travis.yml is created. No, if existing travis.yml is modified.>
-# Maintainer          : <your name and email id>
+# Package             : doxygen
+# Source Repo         : https://github.com/doxygen/doxygen
+# Travis Job Link     : https://travis-ci.com/github/rajesh-ibm-power/doxygen
+# Created travis.yml  : Yes
+# Maintainer          : rajesh.powerpc@gmail.com
 #
 # Script License      : Apache License, Version 2 or later
 #
