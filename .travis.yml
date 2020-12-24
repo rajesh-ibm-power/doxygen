@@ -1,23 +1,39 @@
+# ----------------------------------------------------------------------------
+#
+# Package             : <package name>
+# Source Repo         : <orginal repo link>
+# Travis Job Link     : <travis job link>
+# Created travis.yml  : <Yes, if travis.yml is created. No, if existing travis.yml is modified.>
+# Maintainer          : <your name and email id>
+#
+# Script License      : Apache License, Version 2 or later
+#
+# ---
+
 language: cpp
+
 compiler:
   - gcc
   - clang
+  
+dist: xenial
+
 arch:
   - amd64
   - ppc64le
-before_install:
-    - sudo apt-get -y install cmake
-    - sudo apt-get update
 
-install:
-    - sudo apt-get install texlive
-    - sudo apt-get install texlive-extra-utils
-    - sudo apt-get install -y texlive-latex-extra
-    - sudo apt-get install libxml2-utils
-    - sudo apt-get install cmake cmake-data
-    - sudo apt-get install flex
-    - sudo apt-get install bison
-    - sudo apt-get install qt5-default
+addons:
+  apt:
+      update: true
+      packages:
+      `       - texlive
+              - texlive-extra-utils
+              - texlive-latex-extra
+              - libxml2-utils
+              - cmake cmake-data
+              - flex
+              - bison
+              - qt5-default
 
 script:
     - mkdir build
