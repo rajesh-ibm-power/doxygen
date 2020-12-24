@@ -15,8 +15,6 @@ language: cpp
 compiler:
   - gcc
   - clang
-  
-dist: xenial
 
 arch:
   - amd64
