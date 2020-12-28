@@ -17,13 +17,11 @@ compiler:
 arch:
   - amd64
   - ppc64le
-before_install:
-    - sudo apt-get -y install cmake
-    - sudo apt-get update
 
 addons:
   apt:
     packages:
+    - cmake
     - texlive
     - texlive-extra-utils
     - texlive-latex-extra
